@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background-color: deepskyblue;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn.wall {
+  background-color: black;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 0;
+  padding: 20px;
+}
+
+.square {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.square.start,
+.square.end {
+  background-color: deepskyblue;
+}
+
+.square.wall {
+  background-color: black;
+}
+
+.square.open {
+  background-color: limegreen;
+}
+
+.square.close {
+  background-color: tomato;
+}

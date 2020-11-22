@@ -1,0 +1,34 @@
+body {
+  background-color: #30336b;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.droplet {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 0.5px solid white;
+  border-radius: 50%;
+  transform-origin: center;
+  animation: grow 3s linear forwards;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+
+@keyframes grow {
+  from {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  to {
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+    transform: translate(-70px, -70px);
+  }
+}

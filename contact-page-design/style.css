@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-pink-1: #ed73c8;
+  --color-pink-2: #ff6b96;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    var(--color-pink-1),
+    var(--color-pink-2)
+  );
+  font-family: "Muli";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 500px;
+  max-width: 100%;
+  background-color: white;
+  padding: 50px 70px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+input,
+textarea {
+  width: 100%;
+  height: 30px;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 0.5px solid #aaa;
+  font-weight: 100;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+}
+
+input[type="submit"] {
+  color: white;
+  background: linear-gradient(
+    to right,
+    var(--color-pink-1),
+    var(--color-pink-2)
+  );
+  cursor: pointer;
+}
+
+input[type="submit"]:focus {
+  outline: 0;
+}
+
+p {
+  color: #888;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+}

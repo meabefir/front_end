@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fa27dc6c20.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Create Account</h1>
+      </div>
+      <form id="form">
+        <div class="form-control">
+          <label>Username</label
+          ><input type="text" placeholder="Enter username..." id="username" />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <div class="msg"></div>
+        </div>
+        <div class="form-control">
+          <label>Email</label
+          ><input type="text" placeholder="Enter email..." id="email" />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <div class="msg"></div>
+        </div>
+        <div class="form-control">
+          <label>Password</label
+          ><input type="text" placeholder="Enter password..." id="password" />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <div class="msg"></div>
+        </div>
+        <div class="form-control">
+          <label>Password Check</label
+          ><input
+            type="text"
+            placeholder="Confirm password..."
+            id="password2"
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <div class="msg"></div>
+        </div>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

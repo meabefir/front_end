@@ -1,0 +1,111 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin : 0;
+  height : 100vh;
+}
+
+.gravity-switch-container{
+  width : 250px;
+  height : 77px;
+  border-radius : 37.5px;
+  background: red;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items : center;
+  justify-content: flex-start;
+  padding : 0 3px;
+}
+
+.gravity-switch-container:hover{
+  cursor:pointer;
+}
+
+.gravity-switch-container.animate-gravity-switch-container{
+  animation : animate-gravity-switch-container var(--animation-duration) linear;
+}
+
+.gravity-switch-container.deanimate-gravity-switch-container{
+  animation : deanimate-gravity-switch-container var(--animation-duration) linear;
+}
+
+@keyframes animate-gravity-switch-container{
+  0%{
+    transform : rotate(0deg);
+  }
+  33%{
+    transform : rotate(25deg);
+  }
+  66%{
+    transform : rotate(25deg);
+  }
+  100%{
+    transform : rotate(0deg);
+  }
+}
+
+@keyframes deanimate-gravity-switch-container{
+  0%{
+    transform : rotate(0deg);
+  }
+  33%{
+    transform : rotate(-25deg);
+  }
+  66%{
+    transform : rotate(-25deg);
+  }
+  100%{
+    transform : rotate(0deg);
+  }
+}
+
+.gravity-switch-ball{
+  background-color : green;
+  width : 70px;
+  height : 70px;
+  border-radius : 50%;
+  background : lime;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.75);
+  animation-fill-mode: forwards;
+}
+
+.gravity-switch-ball.animate-gravity-switch-ball{
+  animation : animate-gravity-switch-ball var(--animation-duration) ease-in-out forwards;
+}
+.gravity-switch-ball.deanimate-gravity-switch-ball{
+  animation : deanimate-gravity-switch-ball var(--animation-duration) ease-in-out forwards;
+}
+
+@keyframes animate-gravity-switch-ball{
+  0%{
+    transform : translatex(0px);
+  }
+  33%{
+    transform : translatex(0px);
+  }
+  66%{
+    transform : translatex(175px);
+  }
+  100%{
+    transform : translatex(175px);
+  }
+}
+@keyframes deanimate-gravity-switch-ball{
+  0%{
+    transform : translatex(175px);
+  }
+  33%{
+    transform : translatex(175px);
+  }
+  66%{
+    transform : translatex(0px);
+  }
+  100%{
+    transform : translatex(0px);
+  }
+}

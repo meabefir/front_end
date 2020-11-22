@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  height: 100vh;
+}
+
+.screen {
+  width: 100vw;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.bar {
+  border-top: 0.5px solid #aaa;
+  width: 100vw;
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+}
+
+input {
+  line-height: 3;
+  padding: 10px 15px;
+  flex: 9;
+  height: 100%;
+}
+
+button {
+  flex: 1;
+  height: 100%;
+  color: white;
+  background-color: #4e85f3;
+  border: 0;
+  cursor: pointer;
+}
+
+.message {
+  padding: 10px 15px;
+  background-color: #4e85f3;
+  color: white;
+  border-radius: 5px;
+  margin: 15px;
+}

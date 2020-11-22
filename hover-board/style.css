@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background : #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin : 0;
+  height : 100vh;
+}
+
+.container{
+  display: flex;
+  flex-wrap : wrap;
+}
+
+.square{
+  margin : 1px;
+  background : #1d1d1d;
+}
+
+.square:not(:hover){
+  transition : all 2s;
+}

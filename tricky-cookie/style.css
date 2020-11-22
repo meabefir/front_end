@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  --main-color : #3498db;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background : var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height : 100vh;
+  margin : 0;
+}
+
+img {
+  width : 100px;
+  height : 100px;
+}
+
+.container {
+  padding : 20px 20px;
+  width: 500px;
+  max-width : 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius : 5px;
+  background : white;
+  box-shadow : -4px 4px 10px 2px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.container p {
+  margin : 0 auto 25px;
+}
+
+.buttons-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width : 100%;
+}
+
+.btn{
+  font-size : 20px;
+  cursor : pointer;
+  padding : 14px 22px;
+  border : 0;
+  border-radius : 4px;
+  margin : 5px;
+}
+
+.normal-btn{
+  background : var(--main-color);
+  color : white;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tricky-btn{
+  background : white;
+  color : var(--main-color);
+  position: relative;
+}
+
+.tooltip{
+  position: absolute;
+  background : var(--main-color);
+  color : white;
+  font-size : 10px;
+  padding : 3px;
+  border-radius : 4px;
+  width : 80px;
+  right : 0;
+  top : -10px;
+  transform : rotate(12deg);
+}
+
+.btn:focus{
+  outline : 0;
+}

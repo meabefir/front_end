@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:300&display=swap");
+
+* {
+  box-sizing: border-box;
+  transition: background 0.6s linear, color 0.6s linear;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+}
+
+body.light {
+  background: white;
+}
+
+body.dark {
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen-mode {
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.screen-mode.light {
+  background: black;
+  color: white;
+}
+
+.screen-mode.dark {
+  background: white;
+  color: black;
+}
+
+.clock-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.needle {
+  position: absolute;
+  left: 50%;
+  transition: all 0.5s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+  width: 2px;
+  transform-origin: bottom center;
+}
+
+.needle.seconds {
+  z-index: 1;
+  height: 150px;
+  background: red;
+  transform: translate(-50%);
+}
+
+.needle.minutes {
+  z-index: 0;
+  height: 150px;
+  transform: translate(-50%);
+}
+
+.clock-container.light .needle.minutes {
+  background: black;
+}
+.clock-container.dark .needle.minutes {
+  background: white;
+}
+
+.needle.hours {
+  z-index: 0;
+  height: 80px;
+  transform: translate(-50%, 70px);
+}
+
+.clock-container.light .needle.hours {
+  background: black;
+}
+.clock-container.dark .needle.hours {
+  background: white;
+}
+
+.tick-container {
+  position: absolute;
+  transform-origin: bottom center;
+  left: 50%;
+  height: 150px;
+  width: 2px;
+}
+
+.big-tick {
+  width: 2px;
+  height: 15px;
+  position: absolute;
+}
+
+.clock-container.light .big-tick {
+  background: black;
+}
+
+.clock-container.dark .big-tick {
+  background: white;
+}
+
+.small-tick {
+  width: 2px;
+  height: 7px;
+  position: absolute;
+}
+
+.clock-container.light .small-tick {
+  background: black;
+}
+
+.clock-container.dark .small-tick {
+  background: white;
+}
+
+.center-point {
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock-container.light .center-point {
+  background: black;
+}
+
+.clock-container.dark .center-point {
+  background: white;
+}
+
+.time-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.time {
+  font-size: 60px;
+}
+
+.time-container.light .time {
+  color: black;
+}
+
+.time-container.dark .time {
+  color: white;
+}
+
+.time-container.light .date {
+  color: #aaaaaa;
+}
+
+.time-container.dark .date {
+  color: white;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+}
+
+.date span {
+  margin-left: 4px;
+  text-align: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+.time-container.light .date span {
+  background: black;
+  color: white;
+}
+
+.time-container.dark .date span {
+  background: white;
+  color: black;
+  font-weight: 700;
+}

@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+canvas {
+  background-color: #222;
+  display: block;
+}
+
+.input-container {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+select {
+  width: 100px;
+  height: 40px;
+  line-height: 2;
+  border-radius: 5px;
+}
+
+select:focus {
+  outline: 0;
+}
+
+label {
+  color: #ddd;
+}

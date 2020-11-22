@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Particles</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div class="input-container">
+      <label for="nr-balls-input"
+        >Number of balls: <span id="nr-balls-span"></span
+      ></label>
+      <input
+        type="range"
+        min="1"
+        max="250"
+        step="1"
+        id="nr-balls-input"
+        value="50"
+      />
+      <label for="range-input"
+        >Maximum range: <span id="range-span"></span
+      ></label>
+      <input
+        type="range"
+        min="10"
+        max="300"
+        step="1"
+        id="range-input"
+        value="50"
+      />
+      <label for="radius-show">Show radius</label>
+      <input type="checkbox" id="radius-show" />
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
